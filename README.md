@@ -41,7 +41,7 @@ Enables instant upload for active candidate profiles along with a direct textbox
 The analysis layout calculates a quantitative resume quality score (e.g., 94/100) alongside domain field predictions and live external career redirect links.
 
 ---
-## 🚀 Installation & Local Environment Setup
+## Installation & Local Environment Setup
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com
