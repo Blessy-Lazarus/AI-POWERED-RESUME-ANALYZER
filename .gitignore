@@ -1,0 +1,16 @@
+# Ignore local environment databases
+*.db
+resume_parser.db
+users_sg.db
+
+# Ignore runtime user uploads cache
+uploads/*
+!uploads/.gitkeep
+
+# Ignore local system execution logs
+*.log
+app.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

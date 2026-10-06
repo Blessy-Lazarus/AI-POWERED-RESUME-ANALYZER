@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Resume Analysis Dashboard</h2>
+            </div>
+            <div class="card-body">
+                <form id="resumeForm" class="mb-4">
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Upload Resume</label>
+                        <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
+                        <div class="form-text">Supported formats: PDF, DOC, DOCX, JPG, JPEG, PNG (Max 16MB)</div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Analyze Resume</button>
+                    </div>
+                </form>
+
+                <div id="results" style="display: none;">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0">Analysis Results</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Score: <span id="score" class="badge bg-primary"></span>/100</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Structure: <span id="structure" class="badge bg-info"></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0">Skills</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="skills" class="skill-tags"></div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0">Recommended Jobs</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul id="jobs" class="list-group"></ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0">Current Job Openings</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="openings" class="list-group"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0">Learning Roadmap</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="roadmap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
