@@ -1,10 +1,10 @@
-# AI-Powered Resume Analyzer & Job Recommendation System 🤖📄
+# AI-Powered Resume Analyzer & Job Recommendation System 
 
 An intelligent, full-stack recruitment automation engine designed to parse unstructured resume data, categorize professional domains, conduct deep semantic gap analysis, and map personalized learning paths for job seekers.
 
 ---
 
-## 🛠️ Tech Stack & Key Frameworks
+## Tech Stack & Key Frameworks
 - **Core Language:** Python 3.9+
 - **Machine Learning & NLP:** Scikit-Learn (SVM, Logistic Regression), NLTK (Tokenization, POS Tagging)
 - **Generative AI & NLU:** OpenAI GPT API (Semantic Analysis & Contextual Matching)
@@ -16,7 +16,7 @@ An intelligent, full-stack recruitment automation engine designed to parse unstr
 
 
 
-## 🏗️ System Architecture & Workflow
+## System Architecture & Workflow
 The system establishes an end-to-end automated processing pipeline spanning five core modular phases:
 ```text
 [ Data Analysis ] ──> [ Recommendation Engine ] ──> [ Quality Analysis ] ──> [ Market Integration ] ──> [ Resource Curation ]
@@ -31,15 +31,15 @@ The system establishes an end-to-end automated processing pipeline spanning five
 
 ---
 
-## 📊 Application Dashboard Preview
+##  Application Dashboard Preview
 ### 1. Central Portal & Authentication
 The landing dashboard prompts candidates to submit secure profile verification before interacting with the core parsing neural layers.
-<img src="https://githubusercontent.com" width="700" alt="Dashboard Core Entry"/>
+
 ### 2. File Processing Portal & Analysis Readout
 Enables instant upload for active candidate profiles along with a direct textbox to accept target company job descriptions for deep cross-referencing.
-<img src="https://githubusercontent.com" width="700" alt="Application Core Interface"/>
+
 The analysis layout calculates a quantitative resume quality score (e.g., 94/100) alongside domain field predictions and live external career redirect links.
-<img src="https://githubusercontent.com" width="700" alt="Metric Feedback Dashboard"/>
+
 ---
 ## 🚀 Installation & Local Environment Setup
 ### 1. Clone the Repository
@@ -63,4 +63,3 @@ python -m spacy download en_core_web_sm
 ```bash
 flask run --port=5000
 ```
-Open your browser and navigate to `http://127.0.0.1:5000` to interact with the environment.
